@@ -1,0 +1,13 @@
+header {
+  height: 520px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url('/images/black-felt.png');
+  background-color: rosybrown;
+ }
+ .spaceHolder {
+  opacity: 100%;
+ }

@@ -9,6 +9,8 @@
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -20,16 +22,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- icons kit -->
+    <script src="https://kit.fontawesome.com/6b1c1abf89.js" crossorigin="anonymous"></script>
   
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <div class="navContainer">
+        <span id="logo">tweeter</span>
+        <div class="newTweet">
+          <span><b>Write</b> a new tweet</span>
+          <span><i class="fa-solid fa-angles-down" style="color: red;"></i></span>
+        </div>
+      </div>
     </nav>
+    <header>
+      <div class="spaceHolder"><h2>space holder</h2></div>
+      <div>
+        <img src="/images/profile-hex.png">
+      </div>
+   
+      <div>
+        <h2>Hooman Asadian</h2>
+      </div>
+    </header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <P>this is a sample Do not use in-line style tags or (worse) in-line style attributes! CSS changes must be made in the associated CSS files. 
+        Since this is a page layout issue, make your CSS changes to the layout.css instead of nav.css.</P>
+    </main>
   </body>
 </html>
