@@ -5,12 +5,12 @@
   padding-bottom: 1em;
   
 }
-#tweet-text {
+/* #tweet-text {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid rgb(64, 64, 64);
   height: 1.5em;
-}
+} */
 form {
   display: flex;
   flex-wrap: wrap;
@@ -25,6 +25,11 @@ button {
 }
 textarea {
   resize: none;
+  height: auto;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(64, 64, 64);
 }
 /* .flex-container {
   display: flex;

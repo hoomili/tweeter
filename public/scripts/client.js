@@ -66,7 +66,7 @@ $(document).ready(function() {
   const $form = $('form');
   $form.submit(function(event) {
     event.preventDefault();
-    
+    console.log(event);
   });
 });
 
