@@ -35,7 +35,7 @@ $(document).ready(function() {
     <article class="tweet">
       <header>
         <div>
-          ${tweet.user.avatars} ${tweet.user.name}
+          <img src="${tweet.user.avatars}"> ${tweet.user.name}
         </div>
         <div>${tweet.user.handle}</div>
       </header>
