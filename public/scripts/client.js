@@ -18,7 +18,7 @@ $(document).ready(function() {
         ${tweet.content.text}
       </p>
       <footer>
-        <div>posted ${(Date.now() - tweet.created_at) / 1000 / 60 / 60 / 24} days ago</div>
+        <div>posted ${timeago.format(tweet.created_at)}</div>
         <div class="icons">
           <i class="fa-sharp fa-solid fa-flag"></i>
           <i class="fa-solid fa-retweet"></i>
