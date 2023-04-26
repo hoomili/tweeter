@@ -63,6 +63,11 @@ $(document).ready(function() {
     }
   };
   renderTweets(data);
+  const $form = $('form');
+  $form.submit(function(event) {
+    event.preventDefault();
+    
+  });
 });
 
 
