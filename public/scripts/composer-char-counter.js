@@ -10,4 +10,22 @@ $(document).ready(function() {
       $(this).parents().children("div").children(".counter").removeClass('red');
     }
   });
+  $('.tweet').hover(function() {
+    $(this).hover(
+      function() {
+        $(this).addClass("shadow");
+      }, function() {
+        $(this).removeClass("shadow");
+      }
+    )
+  })
+  $('.icons').hover(function() {
+    $(this).hover(
+      function() {
+        $(this).addClass("hover");
+      }, function() {
+        $(this).removeClass("hover");
+      }
+    )
+  })
 });

@@ -1,0 +1,36 @@
+article.tweet {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  padding: 1em;
+  
+}
+.shadow {
+  box-shadow: 5px 10px lightblue ;
+}
+
+article.tweet header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+}
+article.tweet footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  padding: 1em;
+  font-size: medium;
+  font-weight: bold;
+}
+article.tweet p {
+  padding: 1em;
+  font-weight: bold;
+}
+.icons {
+  color: blue;
+}
+.hover{
+  color: rgb(255, 187, 0);
+}
