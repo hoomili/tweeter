@@ -3,7 +3,7 @@ article.tweet {
   flex-direction: column;
   border: 3px solid black;
   padding: 1em;
-  
+  margin: 1em;
 }
 .shadow {
   box-shadow: 5px 10px lightblue ;

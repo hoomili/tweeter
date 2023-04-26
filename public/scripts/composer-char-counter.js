@@ -17,8 +17,8 @@ $(document).ready(function() {
       }, function() {
         $(this).removeClass("shadow");
       }
-    )
-  })
+    );
+  });
   $('.icons').hover(function() {
     $(this).hover(
       function() {
@@ -26,6 +26,6 @@ $(document).ready(function() {
       }, function() {
         $(this).removeClass("hover");
       }
-    )
-  })
+    );
+  });
 });
