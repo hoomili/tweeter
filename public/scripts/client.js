@@ -19,7 +19,7 @@ $(document).ready(function() {
       </p>
       <footer>
         <div>posted ${timeago.format(tweet.created_at)}</div>
-        <div class="icons">
+        <div>
           <i class="fa-sharp fa-solid fa-flag"></i>
           <i class="fa-solid fa-retweet"></i>
           <i class="fa-solid fa-heart"></i>
@@ -63,7 +63,7 @@ $(document).ready(function() {
       alert('Cannot Post Tweet! Input string is more than 140 character');
       return;
     }
-    $(this).children('#tweet-text').val("")
+    $(this).children('#tweet-text').val("");
     $.ajax({
       method: "POST",
       url: "/tweets",
@@ -73,20 +73,6 @@ $(document).ready(function() {
     });
       
   });
-  $('.tweet').hover(
-    function() {
-      $(this).addClass("shadow");
-    }, function() {
-      $(this).removeClass("shadow");
-    }
-  );
-  $('.icons i').hover(
-    function() {
-      $(this).addClass("hover");
-    }, function() {
-      $(this).removeClass("hover");
-    }
-  );
 });
 
 

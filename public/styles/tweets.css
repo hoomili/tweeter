@@ -5,9 +5,10 @@ article.tweet {
   padding: 1em;
   margin: 1em;
 }
-.shadow {
+article.tweet:hover {
   box-shadow: 5px 10px lightblue ;
 }
+
 
 article.tweet header {
   display: flex;
@@ -35,13 +36,15 @@ article.tweet p {
   word-wrap: break-word;
 }
 
-.icons {
+footer div i {
   color: blue;
 }
 
-.hover{
+footer div i:hover {
   color: rgb(255, 187, 0);
 }
+
+
 
 article.tweet header div {
   display: flex;
