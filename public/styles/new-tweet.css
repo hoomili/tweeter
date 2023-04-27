@@ -3,7 +3,6 @@
   flex-direction: column;
   width: 100%;
   padding-bottom: 1em;
-  
 }
 form {
   display: flex;
@@ -36,4 +35,18 @@ textarea {
 }
 .red {
   color: red;
+}
+
+.error {
+  visibility: hidden;
+  border: 2px solid red;
+  color: white;
+  background-color: rgb(253, 82, 82);
+  text-align: center;
+  border-radius: 1rem;
+  font-size: 2rem;
+  margin: 1rem;
+}
+.visibility {
+  visibility: visible;
 }

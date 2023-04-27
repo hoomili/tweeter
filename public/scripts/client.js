@@ -4,6 +4,11 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function() {
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
   const createTweetElement = function(tweet) {
     const $newTweet = $(`
     <article class="tweet">
@@ -15,7 +20,7 @@ $(document).ready(function() {
         <section>${tweet.user.handle}</section>
       </header>
       <p>
-        ${tweet.content.text}
+        ${escape(tweet.content.text)}
       </p>
       <footer>
         <div>posted ${timeago.format(tweet.created_at)}</div>
@@ -56,13 +61,16 @@ $(document).ready(function() {
     const data = $(this).serialize();
     const inputLength = $(this).children('#tweet-text').val().length;
     if (inputLength === 0) {
-      alert('No content is present to post');
+      $(this).parent().children('div').text('⚠ There is nothing to tweet! Please type something to post. ⚠');
+      $(this).parent().children('div').addClass('visibility');
       return;
     }
     if (inputLength > 140) {
-      alert('Cannot Post Tweet! Input string is more than 140 character');
+      $(this).parent().children('div').text('⚠ Cannot Post Tweet! Input is more than 140 character. ⚠');
+      $(this).parent().children('div').addClass('visibility');
       return;
     }
+    $(this).parent().children('div').removeClass('visibility');
     $(this).children('#tweet-text').val("");
     $.ajax({
       method: "POST",
