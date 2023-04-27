@@ -32,23 +32,12 @@ $(document).ready(function() {
   const renderTweets = function(tweets) {
     for (const tweet of tweets) {
       const $tweetElement = createTweetElement(tweet);
-      $('#tweets-container').append($tweetElement);
+      $('#tweets-container').prepend($tweetElement);
 
     }
   };
 
-  // sendig the form data to the server
-  const $form = $('form');
-  $form.submit(function(event) {
-    event.preventDefault();
-    const data = $(this).serialize();
-    $.ajax({
-      method: "POST",
-      url: "/tweets",
-      data: data
-    }).then(console.log(data));
-  });
-  
+  // load the tweets from the server
   const loadTweets = function() {
     $.ajax({
       method: 'GET',
@@ -60,6 +49,44 @@ $(document).ready(function() {
   };
   loadTweets();
 
+  // sendig the form data to the server
+  const $form = $('form');
+  $form.submit(function(event) {
+    event.preventDefault();
+    const data = $(this).serialize();
+    const inputLength = $(this).children('#tweet-text').val().length;
+    if (inputLength === 0) {
+      alert('No content is present to post');
+      return;
+    }
+    if (inputLength > 140) {
+      alert('Cannot Post Tweet! Input string is more than 140 character');
+      return;
+    }
+    $(this).children('#tweet-text').val("")
+    $.ajax({
+      method: "POST",
+      url: "/tweets",
+      data: data
+    }).then(function() {
+      loadTweets();
+    });
+      
+  });
+  $('.tweet').hover(
+    function() {
+      $(this).addClass("shadow");
+    }, function() {
+      $(this).removeClass("shadow");
+    }
+  );
+  $('.icons i').hover(
+    function() {
+      $(this).addClass("hover");
+    }, function() {
+      $(this).removeClass("hover");
+    }
+  );
 });
 
 

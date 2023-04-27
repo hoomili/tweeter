@@ -31,6 +31,8 @@ article.tweet footer {
 article.tweet p {
   padding: 1rem;
   font-weight: bold;
+  height: auto;
+  word-wrap: break-word;
 }
 
 .icons {

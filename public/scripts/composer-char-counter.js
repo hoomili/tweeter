@@ -1,23 +1,5 @@
 $(document).ready(function() {
   // --- our code goes here ---
-  $('.tweet').hover(function() {
-    $(this).hover(
-      function() {
-        $(this).addClass("shadow");
-      }, function() {
-        $(this).removeClass("shadow");
-      }
-    );
-  });
-  $('.icons i').hover(function() {
-    $(this).hover(
-      function() {
-        $(this).addClass("hover");
-      }, function() {
-        $(this).removeClass("hover");
-      }
-    );
-  });
   $('#tweet-text').on('input', function() {
     const inputLength = $(this).val().length;
     const allowedlength = 140;
