@@ -8,6 +8,8 @@ The page is designed to work on both small and large screens with minor style ch
 
 ## Screenshots
 
+!["Screenshot of large screen view"]()
+!["Screenshot of small screen view"]()
 
 ## Getting Started
 
