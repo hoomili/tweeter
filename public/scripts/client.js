@@ -73,12 +73,15 @@ $(document).ready(function() {
       return;
     }
     $('.error').remove();
+    
     $.ajax({
       method: "POST",
       url: "/tweets",
       data: data
     }).then(function() {
       loadTweets();
+      $('form')[0].reset();
+      $('output').text('140');
     });
       
   });

@@ -48,4 +48,7 @@ article.tweet header div p {
 article.tweet header section {
   font-weight: bold;
   color: rgb(156, 175, 196);
+  height: fit-content;
+  min-width: 0;
+  word-wrap: break-word;
 }
