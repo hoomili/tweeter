@@ -1,13 +1,23 @@
 .trueHeader {
   height: 520px;
-  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   background-image: url('/images/black-felt.png');
   background-color: rosybrown;
  }
- .spaceHolder {
-  opacity: 100%;
+ .trueHeader img {
+  margin-top: 132px;
  }
+
+ @media screen and (min-width: 1024px) {
+  .trueHeader {
+    height: fit-content;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  .trueHeader img {
+    margin: 1rem;
+   }
+ }
+

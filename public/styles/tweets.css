@@ -2,23 +2,18 @@ article.tweet {
   display: flex;
   flex-direction: column;
   border: 3px solid black;
-  padding: 1em;
-  margin: 1em;
+  margin-bottom: 2rem;
 }
 article.tweet:hover {
   box-shadow: 5px 10px lightblue ;
 }
-
-
 article.tweet header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-right: 1rem;
-  
+  padding-right: 1rem; 
 }
-
 article.tweet footer {
   display: flex;
   flex-direction: row;
@@ -28,35 +23,27 @@ article.tweet footer {
   font-size: medium;
   font-weight: bold;
 }
-
 article.tweet p {
   padding: 1rem;
   font-weight: bold;
   height: auto;
   word-wrap: break-word;
 }
-
 footer div i {
   color: blue;
 }
-
 footer div i:hover {
   color: rgb(255, 187, 0);
 }
-
-
-
 article.tweet header div {
   display: flex;
   align-items: center;
 }
-
 article.tweet header div p {
   margin: 0;
   padding: 10px;
   font-weight: normal;
 }
-
 article.tweet header section {
   font-weight: bold;
   color: rgb(156, 175, 196);

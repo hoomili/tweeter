@@ -25,7 +25,20 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 main {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 120px;
+  }
+  body > * {
+    flex: 1 1 0;
+  }
+  main {
+    flex-grow: 2;
+  }
 }

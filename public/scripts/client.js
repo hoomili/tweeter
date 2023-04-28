@@ -61,17 +61,18 @@ $(document).ready(function() {
     const data = $(this).serialize();
     const inputLength = $(this).children('#tweet-text').val().length;
     if (inputLength === 0) {
-      $(this).parent().children('div').text('⚠ There is nothing to tweet! Please type something to post. ⚠');
-      $(this).parent().children('div').addClass('visibility');
+      $('.error').remove();
+      const $errMessage = $('<div class="error">⚠ There is nothing to tweet! Please type something to post. ⚠</div>');
+      $('.new-tweet').prepend($errMessage);
       return;
     }
     if (inputLength > 140) {
-      $(this).parent().children('div').text('⚠ Cannot Post Tweet! Input is more than 140 character. ⚠');
-      $(this).parent().children('div').addClass('visibility');
+      $('.error').remove();
+      const $errMessage = $('<div class="error">⚠ Cannot Post Tweet! Input is more than 140 character. ⚠</div>');
+      $('.new-tweet').prepend($errMessage);
       return;
     }
-    $(this).parent().children('div').removeClass('visibility');
-    $(this).children('#tweet-text').val("");
+    $('.error').remove();
     $.ajax({
       method: "POST",
       url: "/tweets",

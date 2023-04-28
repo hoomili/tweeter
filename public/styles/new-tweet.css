@@ -1,13 +1,14 @@
 .new-tweet {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  
   padding-bottom: 1em;
 }
 form {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin-bottom: 1.5rem;
 }
 button {
   background-color: #4056A1;
@@ -24,9 +25,8 @@ textarea {
   outline: none;
   border-bottom: 2px solid rgb(64, 64, 64);
 }
-/* .flex-container {
-  display: flex;
-} */
+
+
 .counter {
   font-family: 'Bungee', sans-serif;
   margin-left: 0;
@@ -38,14 +38,14 @@ textarea {
 }
 
 .error {
-  visibility: hidden;
+  /* visibility: collapse; */
   border: 2px solid red;
   color: white;
   background-color: rgb(253, 82, 82);
   text-align: center;
   border-radius: 1rem;
   font-size: 2rem;
-  margin: 1rem;
+  padding: 0.5rem;
 }
 .visibility {
   visibility: visible;
