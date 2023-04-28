@@ -1,7 +1,7 @@
 .new-tweet {
   display: flex;
   flex-direction: column;
-  
+  margin-top: 2rem;
   padding-bottom: 1em;
 }
 form {
@@ -19,13 +19,16 @@ button {
 }
 textarea {
   resize: none;
-  height: auto;
+ 
   background-color: transparent;
   border: none;
   outline: none;
   border-bottom: 2px solid rgb(64, 64, 64);
 }
-
+::placeholder {
+  font-weight: bold;
+  color: black;
+}
 
 .counter {
   font-family: 'Bungee', sans-serif;
@@ -38,7 +41,6 @@ textarea {
 }
 
 .error {
-  /* visibility: collapse; */
   border: 2px solid red;
   color: white;
   background-color: rgb(253, 82, 82);
@@ -46,7 +48,4 @@ textarea {
   border-radius: 1rem;
   font-size: 2rem;
   padding: 0.5rem;
-}
-.visibility {
-  visibility: visible;
 }
