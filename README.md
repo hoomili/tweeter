@@ -8,8 +8,8 @@ The page is designed to work on both small and large screens with minor style ch
 
 ## Screenshots
 
-!["Screenshot of large screen view"]()
-!["Screenshot of small screen view"]()
+!["Screenshot of large screen view"](https://raw.githubusercontent.com/hoomili/tweeter/894df021f2c02253d83977df2f564fbe57c45b84/doc/main-desktop-page.png)
+!["Screenshot of small screen view"](https://raw.githubusercontent.com/hoomili/tweeter/894df021f2c02253d83977df2f564fbe57c45b84/doc/mobile-view.png)
 
 ## Getting Started
 
